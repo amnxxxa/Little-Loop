@@ -99,8 +99,8 @@ p {
   height: var(--nav-height);
   display: flex;
   align-items: center;
-  background:#b182dff8;
-  /* background: var(--light-blue); */
+   background:#e2b9dbf8; 
+   /* background: var(--light-blue);  */
   padding: 3rem;
   z-index: var(--z-navbar);
 }
