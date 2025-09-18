@@ -116,8 +116,16 @@ p {
   font-size: 1.5rem;
   font-weight: 700;
   padding-right: 12rem;
-  color: var(--primary-green);
+  color: var(--primary-green); /* Logo text color */
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.logo-img {
+  height: 2.4rem;
+  width: auto;
 }
 
 .logo:hover{
@@ -261,7 +269,7 @@ p {
   background: var(--white);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 1.5rem;
+  padding: 1.7rem;
   position: relative;
   z-index: var(--z-cards);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -269,6 +277,10 @@ p {
 .card:hover, .feature-card:hover, .grid-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+.card canvas {
+  width: 100% ;
+  height: 450px !important; /* give it a visible height */
 }
 
 /* -------------------------
