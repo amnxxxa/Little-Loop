@@ -102,7 +102,7 @@ function addToRecentActivities(activity) {
             <span>${time}</span>
             <span>${childName} - ${activity.activityType}</span>
             <span>${moodEmoji}</span>
-            <span style="color: var(--primary-green);">Sent</span>
+            <span style="color: var(--primary-purple);">Sent</span>
         `
 
     // Insert after header

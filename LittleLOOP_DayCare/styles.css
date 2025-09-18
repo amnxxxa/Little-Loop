@@ -1,9 +1,9 @@
 /* LittleLoop Daycare Companion Website Styles (refactored & enhanced) */
 :root {
   /* Colors */
-  --primary-green: #986ff9;
+  --primary-purple: #986ff9;
   --light-green: #e0e7ff;
-  --primary-blue: #e23e90;
+  --primary-pink: #e23e90;
   --light-blue: #fce7f3;
   --cream: #fffbeb;
   --soft-lavender: #f1f5f9;
@@ -116,7 +116,7 @@ p {
   font-size: 1.5rem;
   font-weight: 700;
   padding-right: 12rem;
-  color: var(--primary-green); /* Logo text color */
+  color: var(--primary-purple); /* Logo text color */
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -130,7 +130,7 @@ p {
 
 .logo:hover{
   text-decoration: none;
-  color: var(--primary-blue);
+  color: var(--primary-pink);
 }
 
 .nav-links {
@@ -150,7 +150,7 @@ p {
 }
 
 .nav-links a:hover {
-  color: var(--primary-green);
+  color: var(--primary-purple);
   text-decoration: underline; /* underline on hover */
 }
 
@@ -198,38 +198,38 @@ p {
 }
 
 .btn-primary {
-  background: var(--primary-green);
+  background: var(--primary-purple);
   color: var(--white);
-  border: 2px solid var(--primary-green);
+  border: 2px solid var(--primary-purple);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
   background-color: var(--light-blue); 
-  color:var(--primary-green);
-  border-color: var(--primary-green);
+  color:var(--primary-purple);
+  border-color: var(--primary-purple);
 }
 
 .btn-secondary {
-  background: var(--primary-blue);
+  background: var(--primary-pink);
   color: var(--white);
-  border: 2px solid var(--primary-blue);
+  border: 2px solid var(--primary-pink);
 }
 .btn-secondary:hover {
   transform: translateY(-2px);
   background-color: var(--light-blue);
-  color: var(--primary-blue);
-  border: 2px var(--primary-blue);
+  color: var(--primary-pink);
+  border: 2px var(--primary-pink);
 }
 
 .btn-tertiary {
   background: var(--white);
-  color: var(--primary-green);
+  color: var(--primary-purple);
   border: 2px solid var(--white);
 }
 .btn-tertiary:hover {
   transform: translateY(-2px);
-  background-color: var(--primary-green);
+  background-color: var(--primary-purple);
   color: var(--white);
   border:2px solid var(--white);
 
@@ -237,11 +237,11 @@ p {
 
 .btn-outline {
   background: transparent;
-  color: var(--primary-green);
-  border: 2px solid var(--primary-green);
+  color: var(--primary-purple);
+  border: 2px solid var(--primary-purple);
 }
 .btn-outline:hover {
-  background-color: var(--primary-green);
+  background-color: var(--primary-purple);
   color: var(--white);
   border:2px solid var(--white);
 }
@@ -249,10 +249,10 @@ p {
 .btn-outline-white {
   background: transparent;
   color: var(--white);
-  border: 2px solid var(--primary-green);
+  border: 2px solid var(--primary-purple);
 }
 .btn-outline-white:hover {
-  background-color: var(--primary-green);
+  background-color: var(--primary-purple);
   color: var(--white);
   border:2px solid var(--white);
 }
@@ -298,7 +298,7 @@ section {
   text-align: center;
   padding: 6rem 0;
 }
-.hero h1 { color: var(--primary-green); margin-bottom: 1rem; }
+.hero h1 { color: var(--primary-purple); margin-bottom: 1rem; }
 .hero p {
   font-size: clamp(1rem, 2vw, 1.25rem);
   max-width: 700px;
@@ -361,10 +361,10 @@ section {
 .cta-section h2{
   color: var(--white);
 }
-.cta-box h3 { color: var(--primary-green); }
+.cta-box h3 { color: var(--primary-purple); }
 
 .cta-section {
-  background: var(--primary-green);
+  background: var(--primary-purple);
   color: var(--white);
   width: 80%;              
   border-radius: 10px;
@@ -401,7 +401,7 @@ section {
 .stat-number {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--primary-green);
+  color: var(--primary-purple);
 }
 .stat-label {
   color: var(--dark-gray);
@@ -430,7 +430,7 @@ section {
 }
 .form-input:focus { 
   outline: none; 
-  border-color: var(--primary-green); 
+  border-color: var(--primary-purple); 
 }
 .form-textarea { 
   resize: vertical; 
@@ -455,7 +455,7 @@ section {
   margin: 2rem 0;    /* top & bottom spacing */
 }
 .auth-header { text-align: center; margin-bottom: 2rem; }
-.auth-header h2 { color: var(--primary-green); }
+.auth-header h2 { color: var(--primary-purple); }
 
 /* Footer */
 .footer {
@@ -470,7 +470,7 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
 }
-.footer-section h4 { color: var(--primary-green); margin-bottom: 1rem; }
+.footer-section h4 { color: var(--primary-purple); margin-bottom: 1rem; }
 .footer-section a {
   color: var(--white);
   text-decoration: none;
@@ -478,7 +478,7 @@ section {
   margin-bottom: 0.5rem;
   transition: color 0.2s;
 }
-.footer-section a:hover { color: var(--primary-green); }
+.footer-section a:hover { color: var(--primary-purple); }
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
@@ -530,7 +530,7 @@ section {
 }
 
 .role.green {
-  color: var(--primary-green);
+  color: var(--primary-purple);
 }
 
 .role.pink {

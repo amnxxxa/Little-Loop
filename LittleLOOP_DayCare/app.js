@@ -156,7 +156,7 @@ function showNotification(message, type = "success") {
         top: 20px;
         right: 20px;
         padding: 1rem 1.5rem;
-        background: ${type === "success" ? "var(--primary-green)" : "#dc2626"};
+        background: ${type === "success" ? "var(--primary-purple)" : "#dc2626"};
         color: white;
         border-radius: var(--radius);
         box-shadow: var(--shadow);
