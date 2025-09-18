@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
 
         // Add active state to clicked button
-        this.style.background = "var(--light-green)"
+        this.style.background = "var(--light-blue)"
         this.style.transform = "scale(1.1)"
         selectedMood = this.dataset.mood
       })
@@ -94,7 +94,7 @@ function addToRecentActivities(activity) {
             gap: 1rem; 
             padding: 0.75rem; 
             border-bottom: 1px solid var(--border-gray);
-            background: var(--light-green);
+            background: var(--light-blue);
             animation: fadeIn 0.5s ease-out;
         `
 

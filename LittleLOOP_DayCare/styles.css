@@ -2,9 +2,9 @@
 :root {
   /* Colors */
   --primary-purple: #986ff9;
-  --light-green: #e0e7ff;
+  --light-blue: #e0e7ff;
   --primary-pink: #e23e90;
-  --light-blue: #fce7f3;
+  --light-pink: #fce7f3;
   --cream: #fffbeb;
   --soft-lavender: #f1f5f9;
   --gray-bg: #fdf2f8;
@@ -99,7 +99,7 @@ p {
   height: var(--nav-height);
   display: flex;
   align-items: center;
-  background: var(--light-green);
+  background: var(--light-blue);
   padding: 3rem;
   z-index: var(--z-navbar);
 }
@@ -205,7 +205,7 @@ p {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  background-color: var(--light-blue); 
+  background-color: var(--light-pink); 
   color:var(--primary-purple);
   border-color: var(--primary-purple);
 }
@@ -217,7 +217,7 @@ p {
 }
 .btn-secondary:hover {
   transform: translateY(-2px);
-  background-color: var(--light-blue);
+  background-color: var(--light-pink);
   color: var(--primary-pink);
   border: 2px var(--primary-pink);
 }
@@ -294,7 +294,7 @@ section {
 }
 
 .hero {
-  background: linear-gradient(to bottom right, var(--light-green), var(--light-blue));
+  background: linear-gradient(to bottom right, var(--light-blue), var(--light-pink));
   text-align: center;
   padding: 6rem 0;
 }
@@ -312,7 +312,7 @@ section {
 }
 
 /* Features */
-.features { background: var(--light-blue); }
+.features { background: var(--light-pink); }
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -351,7 +351,7 @@ section {
 
 /* CTA */
 .cta-box {
-  background: var(--light-green);
+  background: var(--light-blue);
   padding: 3rem;
   border-radius: var(--radius);
   text-align: center;
@@ -501,7 +501,7 @@ section {
 
 .team-section {
   padding: 4rem 0;
-  background: var(--light-blue);
+  background: var(--light-pink);
 }
 
 
