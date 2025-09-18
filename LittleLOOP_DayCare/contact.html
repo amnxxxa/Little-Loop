@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LittleLoop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">LittleLoop</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="btn btn-primary">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Have questions about LittleLoop? We're here to help you get started with better daycare communication.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section style="padding: 4rem 0;">
+        <div class="container">
+            <div class="grid grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Send us a Message</h3>
+                        <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                    </div>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-input" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Phone Number (Optional)</label>
+                            <input type="tel" class="form-input" id="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">I am a:</label>
+                            <select class="form-input" id="userType" required>
+                                <option value="">Select...</option>
+                                <option value="parent">Parent</option>
+                                <option value="caregiver">Daycare Provider/Staff</option>
+                                <option value="administrator">Daycare Administrator</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Subject</label>
+                            <select class="form-input" id="subject" required>
+                                <option value="">Select a topic...</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="demo">Request a Demo</option>
+                                <option value="pricing">Pricing Information</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-input form-textarea" id="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <div class="card mb-6">
+                        <h4 style="color: var(--primary-green); margin-bottom: 1rem;">Contact Information</h4>
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong>Email:</strong><br>
+                            <a href="mailto:hello@littleloop.com" style="color: var(--primary-green);">hello@littleloop.com</a>
+                        </div>
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong>Phone:</strong><br>
+                            <a href="tel:+1234567890" style="color: var(--primary-green);">+1 (234) 567-8900</a>
+                        </div>
+                        <div>
+                            <strong>Business Hours:</strong><br>
+                            Monday - Friday: 9:00 AM - 6:00 PM EST<br>
+                            Saturday: 10:00 AM - 4:00 PM EST<br>
+                            Sunday: Closed
+                        </div>
+                    </div>
+
+                    <div class="card mb-6">
+                        <h4 style="color: var(--primary-pink); margin-bottom: 1rem;">Quick Links</h4>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <a href="signup.html" class="btn btn-primary">Start Free Trial</a>
+                            <a href="#" class="btn btn-outline">Schedule a Demo</a>
+                            <a href="#" class="btn btn-secondary">Download Brochure</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h4 style="color: var(--primary-green); margin-bottom: 1rem;">Frequently Asked Questions</h4>
+                        <div style="margin-bottom: 1rem;">
+                            <strong>How much does LittleLoop cost?</strong><br>
+                            <small>We offer flexible pricing plans starting at $9.99/month per child. Contact us for daycare center pricing.</small>
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <strong>Is my data secure?</strong><br>
+                            <small>Yes, we use enterprise-grade security and comply with all child privacy regulations.</small>
+                        </div>
+                        <div>
+                            <strong>How quickly can we get started?</strong><br>
+                            <small>Most daycare centers are up and running within 24-48 hours of signing up.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section style="background: var(--light-gray); padding: 3rem 0;">
+        <div class="container">
+            <div class="text-center">
+                <h2>Need Immediate Help?</h2>
+                <p>Choose the option that works best for you</p>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-6 mt-6">
+                <div class="card text-center">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📧</div>
+                    <h4>Email Support</h4>
+                    <p>Get detailed help via email. We respond within 24 hours.</p>
+                    <a href="mailto:support@littleloop.com" class="btn btn-outline">Email Us</a>
+                </div>
+                
+                <div class="card text-center">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">💬</div>
+                    <h4>Live Chat</h4>
+                    <p>Chat with our support team in real-time during business hours.</p>
+                    <button class="btn btn-primary" onclick="openChat()">Start Chat</button>
+                </div>
+                
+                <div class="card text-center">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📞</div>
+                    <h4>Phone Support</h4>
+                    <p>Speak directly with our team for urgent matters.</p>
+                    <a href="tel:+1234567890" class="btn btn-secondary">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LittleLoop</h4>
+                    <p>Connecting parents with their child's daycare experience through transparent, real-time communication.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="login.html">Login</a>
+                </div>
+                <div class="footer-section">
+                    <h4>For Parents</h4>
+                    <a href="parent-dashboard.html">Parent Dashboard</a>
+                    <a href="reports.html">Progress Reports</a>
+                    <a href="signup.html">Sign Up</a>
+                </div>
+                <div class="footer-section">
+                    <h4>For Caregivers</h4>
+                    <a href="caregiver-dashboard.html">Caregiver Dashboard</a>
+                    <a href="login.html">Staff Login</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LittleLoop. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

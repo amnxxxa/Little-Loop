@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Reports - LittleLoop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">LittleLoop</a>
+                <ul class="nav-links">
+                    <li><a href="parent-dashboard.html">Dashboard</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="index.html" onclick="logout()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reports Header -->
+    <section class="dashboard-header">
+        <div class="container">
+            <h1>Emma's Progress Reports</h1>
+            <p>Track your child's development and daily patterns over time</p>
+        </div>
+    </section>
+
+    <!-- Reports Content -->
+    <section class="dashboard">
+        <div class="container">
+            <!-- Report Period Selector -->
+            <div class="card mb-6">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>Select Report Period</h3>
+                    <div style="display: flex; gap: 1rem;">
+                        <select class="form-input" style="width: auto;">
+                            <option>Last 7 Days</option>
+                            <option>Last 30 Days</option>
+                            <option>Last 3 Months</option>
+                        </select>
+                        <button class="btn btn-primary">Generate Report</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts and Analytics -->
+            <div class="grid grid-cols-2 gap-6 mb-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Daily Mood Trends</h3>
+                    </div>
+                    <canvas id="moodChart" width="400" height="200"></canvas>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Activity Distribution</h3>
+                    </div>
+                    <canvas id="activityChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+
+            <!-- Weekly Summary -->
+            <div class="card mb-8">
+                <div class="card-header">
+                    <h3 class="card-title">This Week's Summary</h3>
+                </div>
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="text-center p-4" style="background: var(--light-green); border-radius: var(--radius);">
+                        <div style="font-size: 2rem; color: var(--primary-green); margin-bottom: 0.5rem;">21</div>
+                        <div style="font-size: 0.875rem; color: var(--dark-gray);">Meals Eaten</div>
+                    </div>
+                    <div class="text-center p-4" style="background: var(--light-pink); border-radius: var(--radius);">
+                        <div style="font-size: 2rem; color: var(--primary-pink); margin-bottom: 0.5rem;">14h</div>
+                        <div style="font-size: 0.875rem; color: var(--dark-gray);">Total Nap Time</div>
+                    </div>
+                    <div class="text-center p-4" style="background: var(--light-green); border-radius: var(--radius);">
+                        <div style="font-size: 2rem; color: var(--primary-green); margin-bottom: 0.5rem;">35</div>
+                        <div style="font-size: 0.875rem; color: var(--dark-gray);">Activities Completed</div>
+                    </div>
+                    <div class="text-center p-4" style="background: var(--light-pink); border-radius: var(--radius);">
+                        <div style="font-size: 2rem; color: var(--primary-pink); margin-bottom: 0.5rem;">😊</div>
+                        <div style="font-size: 0.875rem; color: var(--dark-gray);">Average Mood</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Reports -->
+            <div class="grid grid-cols-2 gap-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Developmental Milestones</h3>
+                    </div>
+                    <div class="milestone-list">
+                        <div style="display: flex; align-items: center; padding: 1rem; background: var(--light-green); border-radius: var(--radius); margin-bottom: 1rem;">
+                            <div style="width: 40px; height: 40px; background: var(--primary-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 1rem;">✓</div>
+                            <div>
+                                <strong>Social Sharing</strong><br>
+                                <small>Successfully shares toys with peers</small>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; padding: 1rem; background: var(--light-green); border-radius: var(--radius); margin-bottom: 1rem;">
+                            <div style="width: 40px; height: 40px; background: var(--primary-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 1rem;">✓</div>
+                            <div>
+                                <strong>Creative Expression</strong><br>
+                                <small>Shows creativity in art activities</small>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; padding: 1rem; background: var(--light-pink); border-radius: var(--radius); margin-bottom: 1rem;">
+                            <div style="width: 40px; height: 40px; background: var(--primary-pink); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 1rem;">📈</div>
+                            <div>
+                                <strong>Following Instructions</strong><br>
+                                <small>Improving at following multi-step directions</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Caregiver Notes</h3>
+                    </div>
+                    <div class="notes-list">
+                        <div style="padding: 1rem; background: var(--light-gray); border-radius: var(--radius); margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <strong>Ms. Jennifer</strong>
+                                <small>Dec 8, 2025</small>
+                            </div>
+                            <p style="margin: 0;">Emma has shown remarkable improvement in her social skills this week. She's more confident in group activities and helps other children when they need assistance.</p>
+                        </div>
+                        <div style="padding: 1rem; background: var(--light-gray); border-radius: var(--radius); margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <strong>Ms. Maria</strong>
+                                <small>Dec 5, 2025</small>
+                            </div>
+                            <p style="margin: 0;">Great progress in fine motor skills during art time. Emma can now hold crayons properly and shows excellent hand-eye coordination.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Report -->
+            <div class="text-center mt-8">
+                <button class="btn btn-primary" onclick="downloadReport()">Download Full Report (PDF)</button>
+                <button class="btn btn-outline ml-4" onclick="emailReport()">Email Report</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 LittleLoop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="reports.js"></script>
+</body>
+</html>

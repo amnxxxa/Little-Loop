@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - LittleLoop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h2>Join LittleLoop</h2>
+                <p>Create your account to get started</p>
+            </div>
+            
+            <form id="signupForm">
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-input" id="fullName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-input" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-input" id="password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Confirm Password</label>
+                    <input type="password" class="form-input" id="confirmPassword" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">I am a:</label>
+                    <select class="form-input" id="userType" required>
+                        <option value="">Select user type...</option>
+                        <option value="parent">Parent</option>
+                        <option value="caregiver">Caregiver/Staff</option>
+                    </select>
+                </div>
+                
+                <div class="form-group" id="childNameGroup" style="display: none;">
+                    <label class="form-label">Child's Name</label>
+                    <input type="text" class="form-input" id="childName">
+                </div>
+                
+                <div class="form-group" id="daycareGroup" style="display: none;">
+                    <label class="form-label">Daycare Center</label>
+                    <select class="form-input" id="daycare">
+                        <option value="">Select daycare...</option>
+                        <option value="sunshine">Sunshine Daycare</option>
+                        <option value="rainbow">Rainbow Kids Center</option>
+                        <option value="little-stars">Little Stars Academy</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-bottom: 1rem;">Create Account</button>
+                
+                <div class="text-center">
+                    <small style="color: #6b7280;">By signing up, you agree to our Terms of Service and Privacy Policy</small>
+                </div>
+            </form>
+            
+            <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border-gray);">
+                <p>Already have an account? <a href="login.html" style="color: var(--primary-green); text-decoration: none; font-weight: 600;">Sign in here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

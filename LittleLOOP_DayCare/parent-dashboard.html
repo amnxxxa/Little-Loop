@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Dashboard - LittleLoop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">LittleLoop</a>
+                <ul class="nav-links">
+                    <li><a href="parent-dashboard.html">Dashboard</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="index.html" onclick="logout()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <section class="dashboard-header">
+        <div class="container">
+            <h1>Welcome back, Sarah!</h1>
+            <p>Here's how Emma's day is going at Sunshine Daycare</p>
+        </div>
+    </section>
+
+    <!-- Dashboard Content -->
+    <section class="dashboard">
+        <div class="container">
+            <!-- Quick Stats -->
+            <div class="dashboard-grid mb-8">
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Meals Today</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2h 15m</div>
+                    <div class="stat-label">Nap Time</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">😊</div>
+                    <div class="stat-label">Happy Mood</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Photos Shared</div>
+                </div>
+            </div>
+
+            <!-- Today's Activities -->
+            <div class="grid grid-cols-2 gap-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Today's Activities</h3>
+                    </div>
+                    <div class="activity-timeline">
+                        <div class="activity-item" style="display: flex; align-items: center; margin-bottom: 1rem; padding: 0.75rem; background: var(--light-green); border-radius: var(--radius);">
+                            <div style="width: 40px; height: 40px; background: var(--primary-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 1rem;">🍎</div>
+                            <div>
+                                <strong>Breakfast</strong> - 8:30 AM<br>
+                                <small>Ate all her oatmeal and banana slices!</small>
+                            </div>
+                        </div>
+                        <div class="activity-item" style="display: flex; align-items: center; margin-bottom: 1rem; padding: 0.75rem; background: var(--light-pink); border-radius: var(--radius);">
+                            <div style="width: 40px; height: 40px; background: var(--primary-pink); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 1rem;">🎨</div>
+                            <div>
+                                <strong>Art Time</strong> - 10:00 AM<br>
+                                <small>Created a beautiful finger painting</small>
+                            </div>
+                        </div>
+                        <div class="activity-item" style="display: flex; align-items: center; margin-bottom: 1rem; padding: 0.75rem; background: var(--light-green); border-radius: var(--radius);">
+                            <div style="width: 40px; height: 40px; background: var(--primary-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 1rem;">😴</div>
+                            <div>
+                                <strong>Nap Time</strong> - 12:30 PM<br>
+                                <small>Slept peacefully for 2 hours 15 minutes</small>
+                            </div>
+                        </div>
+                        <div class="activity-item" style="display: flex; align-items: center; margin-bottom: 1rem; padding: 0.75rem; background: var(--light-pink); border-radius: var(--radius);">
+                            <div style="width: 40px; height: 40px; background: var(--primary-pink); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 1rem;">🏃</div>
+                            <div>
+                                <strong>Playground</strong> - 3:00 PM<br>
+                                <small>Played with friends on the swings</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Recent Photos</h3>
+                    </div>
+                    <div class="photo-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem;">
+                        <div style="aspect-ratio: 1; background: var(--light-green); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: var(--primary-green); font-size: 2rem;">📸</div>
+                        <div style="aspect-ratio: 1; background: var(--light-pink); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: var(--primary-pink); font-size: 2rem;">🎨</div>
+                        <div style="aspect-ratio: 1; background: var(--light-green); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: var(--primary-green); font-size: 2rem;">🍎</div>
+                        <div style="aspect-ratio: 1; background: var(--light-pink); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: var(--primary-pink); font-size: 2rem;">😊</div>
+                    </div>
+                    <a href="#" class="btn btn-outline mt-4" style="width: 100%;">View All Photos</a>
+                </div>
+            </div>
+
+            <!-- Messages and Notes -->
+            <div class="grid grid-cols-2 gap-6 mt-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Messages from Caregivers</h3>
+                    </div>
+                    <div class="message-list">
+                        <div class="message-item" style="padding: 1rem; background: var(--light-gray); border-radius: var(--radius); margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: between; align-items: center; margin-bottom: 0.5rem;">
+                                <strong>Ms. Jennifer</strong>
+                                <small style="color: #6b7280;">2:30 PM</small>
+                            </div>
+                            <p style="margin: 0;">Emma had a wonderful time during art class today! She's showing great creativity and focus.</p>
+                        </div>
+                        <div class="message-item" style="padding: 1rem; background: var(--light-gray); border-radius: var(--radius); margin-bottom: 1rem;">
+                            <div style="display: flex; justify-content: between; align-items: center; margin-bottom: 0.5rem;">
+                                <strong>Ms. Maria</strong>
+                                <small style="color: #6b7280;">11:45 AM</small>
+                            </div>
+                            <p style="margin: 0;">Emma shared her snacks with a friend today. Such a kind gesture!</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-4" style="width: 100%;" onclick="openChat()">Send Message</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Behavior & Mood</h3>
+                    </div>
+                    <div class="mood-tracker">
+                        <div style="text-align: center; margin-bottom: 2rem;">
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">😊</div>
+                            <h4>Happy & Engaged</h4>
+                            <p>Emma has been in a great mood all day, actively participating in activities and playing well with others.</p>
+                        </div>
+                        <div style="background: var(--light-green); padding: 1rem; border-radius: var(--radius);">
+                            <h5 style="color: var(--primary-green); margin-bottom: 0.5rem;">Today's Highlights:</h5>
+                            <ul style="margin: 0; padding-left: 1rem;">
+                                <li>Shared toys with friends</li>
+                                <li>Followed instructions well</li>
+                                <li>Showed creativity in art time</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 LittleLoop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
