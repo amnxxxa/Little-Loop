@@ -483,6 +483,55 @@ section {
   border-top: 1px solid #4b5563;
   color: #9ca3af;
 }
+/* Team Section */
+.team-section {
+  padding: 4rem 0;
+  background: var(--light-blue);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.team-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-photo {
+  width: 80px;   /* small size */
+  height: 80px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+.role {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.role.green {
+  color: var(--primary-green);
+}
+
+.role.pink {
+  color: var(--primary-pink);
+}
+
 
 /* Dot animation keyframes */
 @keyframes moveDots {
