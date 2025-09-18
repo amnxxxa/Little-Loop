@@ -486,22 +486,25 @@ section {
   color: #9ca3af;
 }
 /* Team Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* default mobile */
+  gap: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(5, 1fr); /* 5 members in one row */
+  }
+}
+
 .team-section {
   padding: 4rem 0;
   background: var(--light-blue);
 }
 
-.team-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
 
-@media (min-width: 768px) {
-  .team-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 
 .team-card {
   text-align: center;
